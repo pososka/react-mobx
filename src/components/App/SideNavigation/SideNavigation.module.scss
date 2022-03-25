@@ -1,0 +1,47 @@
+@import "~@ff/ui-kit/lib/styles/scss/fns/colors.scss";
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  img {
+    width: 70px;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: $base-color-100;
+  white-space: nowrap;
+  padding: 16px;
+  transition: all linear 30ms;
+  text-decoration: none;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  &:hover {
+    color: darken($base-color-10, 30);
+    background-color: $primary-color-800;
+  }
+
+  &[class*="active"] {
+    color: $base-color-10;
+    background-color: $primary-color-700;
+  }
+}

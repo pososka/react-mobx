@@ -1,0 +1,30 @@
+$gap: 1rem;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  margin: 0;
+
+  @media (min-width: 1310px) {
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  padding: 10px;
+}

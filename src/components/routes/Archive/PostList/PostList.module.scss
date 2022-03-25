@@ -1,0 +1,7 @@
+$gap: 0.75rem;
+
+.component {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}

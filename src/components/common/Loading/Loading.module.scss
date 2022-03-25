@@ -1,0 +1,30 @@
+.component {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: rotating 1s linear infinite;
+  background: conic-gradient(lightgray, transparent);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

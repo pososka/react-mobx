@@ -1,0 +1,51 @@
+$gap: 0.75rem;
+
+.component {
+  display: flex;
+  flex-basis: 100%;
+  gap: 0.75rem;
+
+  .imageWrapper {
+    width: 280px;
+    height: 185px;
+    overflow: hidden;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: calc($gap / 2);
+    padding: 10px;
+  }
+
+  .text {
+    margin: 0;
+  }
+
+  &.card {
+    flex-direction: column;
+    flex-basis: calc(50% - $gap / 2);
+    gap: 0;
+
+    .imageWrapper {
+      width: auto;
+      height: 250px;
+    }
+
+    .body {
+      gap: $gap;
+    }
+
+    .text {
+      flex: 1;
+    }
+  }
+}
